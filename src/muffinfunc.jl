@@ -61,14 +61,14 @@ println("obj :"," ",obj)
 
 if dataobj == "chiara"
     ##################################
-    println("loading psf...")
+    println("loading psf chiara...")
     psfst = loadpsf_dirty(psf)
     println("loading sky...")
     skyst = loadsky_dirty(obj,psfst.mypsf,psfst.nu)
     ##################################
 else
     ##################################
-    println("loading psf...")
+    println("loading psf other...")
     psfst = loadpsf(psf,bw)
     println("loading sky...")
     skyst = loadsky(obj,psfst.mypsf,psfst.nu)
